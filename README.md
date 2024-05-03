@@ -12,7 +12,7 @@ These are some of the concepts covered:
 - Functions
 
 
-**Requirements**: You should have finished your previous assignment in order to do this assignments as we will be using the database created from that assignment.
+**Requirements**: You should have finished your previous assignment in order to do this assignment as we will be using the shop database.
 
 ## Setup
 
@@ -34,7 +34,10 @@ psql -h localhost -U postgres
 
 and typing the password you configured during your installation.
 
-## Connect to your shop database from previous assignment
+## Connect to your shop database from your previous assignment
+
+![shop](shop.png)
+
 ``` sql
 \c shop;
 ```
@@ -90,70 +93,108 @@ INSERT INTO customer (location_id, name, surname, age) VALUES (10, 'Sofia', 'Mar
 
 1. Count the number of customers in each country who are under 30 years old.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 2. Find the average age of customers in each city.
 ``` sql
-
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 3. Count the number of customers whose names start with 'A'.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 4. Retrieve the names of customers who are from the same city.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 5. Retrieve the names of customers who have visited more than one location.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 6. Retrieve the names of customers who are from countries where the average age is over 50.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 7. List the countries with at least one customer aged under 20 and at least one customer aged over 60.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 8. Find the names of customers who are older than the average age of customers in their city.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 9. List the cities where the age difference between the oldest and youngest customers is more than 20 years.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 10. List the cities with customers aged over 60, ordered by the number of customers in descending order, showing only the top 3.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 11. Create a stored procedure named `get_customer_age` that takes a customer's name as input and returns their age.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 12. Develop a stored procedure named `update_customer_age` that updates the age of a customer given their ID and the new age as parameters
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 13. Construct a stored procedure called `delete_old_customers` that deletes customers who are older than a specified age.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 14. Write a stored procedure named `insert_new_location` that inserts a new location (city and country) into the database.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ``` 
 15. Implement a function named `get_total_customers_in_city` that returns the total number of customers in a specific city.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 16.  Develop a function called `get_customer_location` that retrieves the location (city and country) of a customer based on their id.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
 17. Design a function named `get_customer_count_by_country` that returns the number of customers in each country.
 ``` sql
+-- Copy here your sql code that you ran in your psql shell
 
 ```
+
+*Don't forget to commit and push your answers!*
+
+## References
+
+https://www.w3schools.com/sql/
+
+https://www.freecodecamp.org/news/sql-having-how-to-group-and-count-with-a-having-statement/
+
+https://learnsql.com/blog/count-group-by/
+
+https://www.w3schools.com/sql/sql_having.asp
+
+https://www.w3schools.com/sqL/sql_ref_sqlserver.asp
+
+https://www.sqltutorial.org/sql-functions/
+
+https://www.w3schools.com/SQL/sql_stored_procedures.asp
+
+https://www.programiz.com/sql/stored-procedures
+
+https://www.sqlservertutorial.net/sql-server-stored-procedures/
